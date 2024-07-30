@@ -1,0 +1,33 @@
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie Ticketing System.exe
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie Ticketing System.pdb
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\bin\Debug\CinemaTicketing_DBS.mdf
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\bin\Debug\CinemaTicketing_DBS_log.ldf
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\bin\Debug\Movie Ticketing System.exe
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\bin\Debug\Movie Ticketing System.pdb
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie Ticketing System.csprojResolveAssemblyReference.cache
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Form1.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Add_Movie_Admin.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Admin_Login.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Admin_Manage_Movies.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Admin_Page.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Admin_Registered_users.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Customer_Login.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.EditDetails_ID.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Edit_MovieDetails_Admin.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.LoadingScreen_Gif.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Movie_Details.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Payment_Selection.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Proceed_Form.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Properties.Resources.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Registeration.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.SplashForm.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Ticked_Confimed.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Ticket_Booking.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.User_Page.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Watch_Now.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie Ticketing System.csproj.GenerateResource.Cache
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Admin_UpdatePricing.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.ForgotPassword.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\bin\Debug\QRCoder.dll
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Admin_Manage_Tickets.resources
+C:\Users\Ali Khattak\Documents\Visual Studio 2013\Projects\Movie Ticketing System\Movie Ticketing System\obj\Debug\Movie_Ticketing_System.Ticket_History.resources

@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D0D0C38-312B-4B37-8984-1F31D1F7C596}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Movie_Ticketing_System</RootNamespace>
+    <AssemblyName>Movie Ticketing System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.3.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>..\..\qrchecker\packages\QRCoder.1.4.3\lib\net40\QRCoder.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Form1.cs">
+      <SubType>Form</SubType>
+      <Link>Form1.cs</Link>
+    </Compile>
+    <Compile Include="..\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <Link>Form1.Designer.cs</Link>
+    </Compile>
+    <Compile Include="Add_Movie_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Movie_Admin.Designer.cs">
+      <DependentUpon>Add_Movie_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Login.Designer.cs">
+      <DependentUpon>Admin_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Manage_Movies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Manage_Movies.Designer.cs">
+      <DependentUpon>Admin_Manage_Movies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Manage_Tickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Manage_Tickets.Designer.cs">
+      <DependentUpon>Admin_Manage_Tickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Page.Designer.cs">
+      <DependentUpon>Admin_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Registered_users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Registered_users.Designer.cs">
+      <DependentUpon>Admin_Registered_users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_UpdatePricing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_UpdatePricing.Designer.cs">
+      <DependentUpon>Admin_UpdatePricing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Login.Designer.cs">
+      <DependentUpon>Customer_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDetails_ID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDetails_ID.Designer.cs">
+      <DependentUpon>EditDetails_ID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_MovieDetails_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_MovieDetails_Admin.Designer.cs">
+      <DependentUpon>Edit_MovieDetails_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingScreen_Gif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingScreen_Gif.Designer.cs">
+      <DependentUpon>LoadingScreen_Gif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movie_Details.Designer.cs">
+      <DependentUpon>Movie_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_Selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment_Selection.Designer.cs">
+      <DependentUpon>Payment_Selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proceed_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proceed_Form.Designer.cs">
+      <DependentUpon>Proceed_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Registeration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registeration.Designer.cs">
+      <DependentUpon>Registeration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticked_Confimed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticked_Confimed.Designer.cs">
+      <DependentUpon>Ticked_Confimed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket_Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticket_Booking.Designer.cs">
+      <DependentUpon>Ticket_Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket_History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticket_History.Designer.cs">
+      <DependentUpon>Ticket_History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Page.Designer.cs">
+      <DependentUpon>User_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Watch_NOW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Watch_NOW.Designer.cs">
+      <DependentUpon>Watch_NOW.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <Link>Form1.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Movie_Admin.resx">
+      <DependentUpon>Add_Movie_Admin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Login.resx">
+      <DependentUpon>Admin_Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Manage_Movies.resx">
+      <DependentUpon>Admin_Manage_Movies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Manage_Tickets.resx">
+      <DependentUpon>Admin_Manage_Tickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Page.resx">
+      <DependentUpon>Admin_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Registered_users.resx">
+      <DependentUpon>Admin_Registered_users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_UpdatePricing.resx">
+      <DependentUpon>Admin_UpdatePricing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Login.resx">
+      <DependentUpon>Customer_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDetails_ID.resx">
+      <DependentUpon>EditDetails_ID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_MovieDetails_Admin.resx">
+      <DependentUpon>Edit_MovieDetails_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingScreen_Gif.resx">
+      <DependentUpon>LoadingScreen_Gif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movie_Details.resx">
+      <DependentUpon>Movie_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_Selection.resx">
+      <DependentUpon>Payment_Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proceed_Form.resx">
+      <DependentUpon>Proceed_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registeration.resx">
+      <DependentUpon>Registeration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticked_Confimed.resx">
+      <DependentUpon>Ticked_Confimed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket_Booking.resx">
+      <DependentUpon>Ticket_Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket_History.resx">
+      <DependentUpon>Ticket_History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Page.resx">
+      <DependentUpon>User_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Watch_NOW.resx">
+      <DependentUpon>Watch_NOW.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Film-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-back-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Play-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partner-dash-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abominable-printables-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MV5BMzA3ZDMxMjYtNmZjNS00ZGUwLTgzNDUtODNmMDAxN2I3MzAwXkEyXkFqcGdeQXVyMTMzMjc0MDYz._V1_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MV5BMWEwNjhkYzYtNjgzYy00YTY2LThjYWYtYzViMGJkZTI4Y2MyXkEyXkFqcGdeQXVyNTM0OTY1OQ%40%40._V1_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snh_online_6072x9000_posed_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MV5BNjRlZmM0ODktY2RjNS00ZDdjLWJhZGYtNDljNWZkMGM5MTg0XkEyXkFqcGdeQXVyNjAwMjI5MDk%40._V1_FMjpg_UX1000_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MV5BNzE2ZjQxNjEtNmI2ZS00ZmU0LTg4M2YtYzVhYmRiYWU0YzI1XkEyXkFqcGdeQXVyMTkxNjUyNQ%40%40._V1_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MV5BZDg5ZDg2MWQtM2ExNi00ZjEzLTgzMDQtZmJlYWEwYmM4ODUxXkEyXkFqcGdeQXVyMDM2NDM2MQ%40%40._V1_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fb3-poster-jude-law-full.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MV5BMDk5Yzc4NzMtODUwOS00NTdhLTg2MjEtZTkzZjc0ZWE2MzAwXkEyXkFqcGdeQXVyMTA3MTA4Mzgw._V1_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MV5BMjQzZTA2MmEtNDcwYy00ZWE0LWFlODMtOWQ2MzRjNTgyYmVkXkEyXkFqcGdeQXVyMTkxNjUyNQ%40%40._V1_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MV5BYjlhNTA3Y2ItYjhiYi00NTBiLTg5MDMtZDJjMDZjNzVjNjJmXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spider_Man_Across_the_Spider_Verse_Part_One-524691364-large.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black-Adam-poster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ecommerce-Price-Tag-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cutsomer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-user-group-new-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-user-group-new-icon_55x55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-check-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-right-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-check-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Next-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Credit-Card-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Credit-Card-icon_40x40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Easypaisa-Icon-Original-APK_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Easypaisa-Icon-Original-APK_48x48-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1618827688137_48x48-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images_40x40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1618827688137_48x48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank-icon_40x40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1618827688137_48x48-modified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attachment-RS28208_ThinkstockPhotos-521546846-scr.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-user-properties-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-user-properties-icon_1_40x40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-gif-maker %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IlliterateAnchoredIntermediateegret-size_restricted.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-vector-cloud-upload-icon-png-image_316794.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CinemaTicketing_DBS.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CinemaTicketing_DBS_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>CinemaTicketing_DBS.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\sign-right-icon %281%294.png" />
+    <None Include="Resources\icons8-logout-96 %282%2910.png" />
+    <None Include="Resources\sign-right-icon %281%293.png" />
+    <None Include="Resources\icons8-logout-96 %284%292.png" />
+    <None Include="Resources\icons8-home-96 %283%294.png" />
+    <None Include="Resources\icons8-logout-96 %282%299.png" />
+    <None Include="Resources\dcd1cm6-28fe2487-2f48-4d47-a877-b7f8804c2b7b.gif" />
+    <None Include="Resources\icons8-logout-96 %282%298.png" />
+    <None Include="Resources\icons8-logout-96 %282%297.png" />
+    <None Include="Resources\output-onlinepngtools %282%291.png" />
+    <None Include="Resources\icons8-logout-96 %282%296.png" />
+    <None Include="Resources\icons8-logout-96 %282%295.png" />
+    <None Include="Resources\Misc-Stats-icon.png" />
+    <None Include="Resources\icons8-logout-96 %282%294.png" />
+    <None Include="Resources\icons8-logout-96 %282%293.png" />
+    <None Include="Resources\icons8-home-96 %283%293.png" />
+    <None Include="Resources\icons8-back-to-96 %283%292.png" />
+    <None Include="Resources\icons8-uninstalling-updates-48 %281%29.png" />
+    <None Include="Resources\icons8-logout-96 %284%291.png" />
+    <None Include="Resources\icons8-home-96 %283%292.png" />
+    <None Include="Resources\icons8-logout-96 %284%29.png" />
+    <None Include="Resources\icons8-home-96 %283%291.png" />
+    <None Include="Resources\icons8-back-to-96 %283%291.png" />
+    <None Include="Resources\icons8-logout-96 %283%29.png" />
+    <None Include="Resources\icons8-logout-96 %282%292.png" />
+    <None Include="Resources\icons8-home-96 %283%29.png" />
+    <None Include="Resources\icons8-logout-96 %282%291.png" />
+    <None Include="Resources\icons8-logout-48.png" />
+    <None Include="Resources\icons8-next-page-48 %282%29 %282%29.png" />
+    <None Include="Resources\icons8-back-to-96 %283%29.png" />
+    <None Include="Resources\icons8-next-page-48 %282%29 %281%29.png" />
+    <None Include="Resources\icons8-next-page-48 %281%29.png" />
+    <None Include="Resources\icons8-next-page-48.png" />
+    <None Include="Resources\icons8-laptop-play-video-48 %282%29.png" />
+    <None Include="Resources\icons8-laptop-play-video-48 %281%29.png" />
+    <None Include="Resources\icons8-ticket-confirmed-48.png" />
+    <None Include="Resources\icons8-laptop-play-video-48.png" />
+    <None Include="Resources\icons8-logout-96 %282%29.png" />
+    <None Include="Resources\icons8-logout-96 %281%29.png" />
+    <None Include="Resources\icons8-back-to-96 %282%29.png" />
+    <None Include="Resources\icons8-home-96 %282%29.png" />
+    <None Include="Resources\icons8-home-96 %281%29.png" />
+    <None Include="Resources\icons8-logout-96.png" />
+    <None Include="Resources\icons8-back-to-96 %281%29.png" />
+    <None Include="Resources\icons8-back-to-96.png" />
+    <None Include="Resources\icons8-home-96.png" />
+    <None Include="Resources\home-icon %282%29.png" />
+    <None Include="Resources\Home-icon %281%29.png" />
+    <None Include="Resources\arrow-back-icon2.png" />
+    <None Include="Resources\output-onlinepngtools %284%296.png" />
+    <None Include="Resources\output-onlinepngtools %284%295.png" />
+    <None Include="Resources\stock-photo-popcorn-cinema-reel-disposable-cup-clapper-board-and-tickets-at-blue-background-concept-cinema-626626985-transformed1.jpeg" />
+    <None Include="Resources\stock-photo-popcorn-cinema-reel-disposable-cup-clapper-board-and-tickets-at-blue-background-concept-cinema-626626985-transformed.jpeg" />
+    <None Include="Resources\output-onlinepngtools %284%291.png" />
+    <None Include="Resources\arrow-back-icon1.png" />
+    <None Include="Resources\home-icon1.png" />
+    <None Include="Resources\sign-right-icon %281%292.png" />
+    <None Include="Resources\sign-right-icon %281%291.png" />
+    <None Include="Resources\Actions-user-group-delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
